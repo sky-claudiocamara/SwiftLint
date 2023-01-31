@@ -23,7 +23,8 @@ struct SwiftLintPlugin: BuildToolPlugin {
         var arguments: [String] = [
             "lint",
             "--quiet",
-            "--cache-path", "\(context.pluginWorkDirectory)"
+            "--cache-path", "\(context.pluginWorkDirectory)",
+            "--strict" // Added to force the usage of the strict argument.
         ]
 
         // Manually look for configuration files, to avoid issues when the plugin does not execute our tool from the
@@ -69,7 +70,8 @@ extension SwiftLintPlugin: XcodeBuildToolPlugin {
         var arguments: [String] = [
             "lint",
             "--quiet",
-            "--cache-path", "\(context.pluginWorkDirectory)"
+            "--cache-path", "\(context.pluginWorkDirectory)",
+            "--strict" // Added to force the usage of the strict argument.
         ]
 
         // Xcode build tool plugins don't seem to run from the project source directory, so our auto-discovery of

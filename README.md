@@ -1,3 +1,7 @@
+# - Modified version of SwiftLint -
+This is a modified version of SwiftLint that forces the usage of the argument `--strict` when the SwiftLintPlugin is being used on the project.
+More Info: [JIRA Ticket](https://jira.inbcu.com/browse/PCKMOB-13648)
+
 # SwiftLint
 
 A tool to enforce Swift style and conventions, loosely based on the now archived [GitHub Swift Style Guide](https://github.com/github/swift-style-guide). SwiftLint enforces the style guide rules that are generally accepted by the Swift community. These rules are well described in popular style guides like [Ray Wenderlich's Swift Style Guide](https://github.com/raywenderlich/swift-style-guide).
