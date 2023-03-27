@@ -29,7 +29,8 @@ struct SwiftLintPlugin: BuildToolPlugin {
         var arguments = [
             "lint",
             "--quiet",
-            "--cache-path", "\(workingDirectory)"
+            "--cache-path", "\(workingDirectory)",
+            "--strict" // Added to force the usage of the strict argument.
         ]
 
         // Manually look for configuration files, to avoid issues when the plugin does not execute our tool from the
